@@ -32,6 +32,18 @@ namespace PingPong.Tests
             PingPong testPingPong = new PingPong();
             Assert.AreEqual(false, testPingPong.checkInputDivisibleBy15(1));
         }
+        [TestMethod]
+        public void checkInputDivisibleBy5_NumberDivisibleBy5ButNot3_true()
+        {
+            PingPong testPingPong = new PingPong();
+            Assert.AreEqual(true, testPingPong.checkInputDivisibleBy5(10));
+        }
+        [TestMethod]
+        public void checkInputDivisibleBy5_NumberNotDivisibleBy5_false()
+        {
+            PingPong testPingPong = new PingPong();
+            Assert.AreEqual(false, testPingPong.checkInputDivisibleBy15(16));
+        }
         // [TestMethod]
         // public void PingPongOutput_1AsUserInput_Returns1()
         // {
