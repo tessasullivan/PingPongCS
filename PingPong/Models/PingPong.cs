@@ -10,6 +10,10 @@ namespace PingPong
             bool isInt = int.TryParse(userInput, out myInt);
             return isInt;
         }
+        public bool checkInputDivisibleBy15(int userInput)
+        {
+            return userInput % 15 == 0;
+        }
         public string[] PingPongOutput(int number)
         {
             string[] output = new string[] {"1"};
