@@ -39,7 +39,7 @@ namespace PingPong
             }
             else
             {
-                return "";
+                return userInput.ToString();
             }
         }
         public string[] PingPongOutput(int number)

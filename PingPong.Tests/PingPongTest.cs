@@ -70,10 +70,16 @@ namespace PingPong.Tests
             Assert.AreEqual("pong", testPingPong.outputForSingleNumber(10));
         }      
         [TestMethod]
-        public void outputForSingleNumber_NumberDivisibleBy3ButNot5_pong()
+        public void outputForSingleNumber_NumberDivisibleBy3ButNot5_ping()
         {
             PingPong testPingPong = new PingPong();
             Assert.AreEqual("ping", testPingPong.outputForSingleNumber(9));
+        } 
+        [TestMethod]
+           public void outputForSingleNumber_NumberNotDivisibleBy3By5By15_userInput()
+        {
+            PingPong testPingPong = new PingPong();
+            Assert.AreEqual("19", testPingPong.outputForSingleNumber(19));
         } 
         
         // [TestMethod]
