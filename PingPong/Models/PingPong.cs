@@ -18,6 +18,11 @@ namespace PingPong
         {
             return userInput % 5 == 0;
         }
+
+        public bool checkInputDivisibleBy3(int userInput)
+        {
+            return userInput % 3 == 0;
+        }
         public string[] PingPongOutput(int number)
         {
             string[] output = new string[] {"1"};
