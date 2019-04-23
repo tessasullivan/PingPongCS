@@ -23,6 +23,25 @@ namespace PingPong
         {
             return userInput % 3 == 0;
         }
+        public string outputForSingleNumber(int userInput)
+        {
+            if (checkInputDivisibleBy15(userInput))
+            {
+                return "ping-pong";
+            }
+            else if (checkInputDivisibleBy5(userInput))
+            {
+                return "pong";
+            }
+            else if (checkInputDivisibleBy3(userInput))
+            {
+                return "ping";
+            }
+            else
+            {
+                return "";
+            }
+        }
         public string[] PingPongOutput(int number)
         {
             string[] output = new string[] {"1"};
