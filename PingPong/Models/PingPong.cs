@@ -14,6 +14,10 @@ namespace PingPong
         {
             return userInput % 15 == 0;
         }
+        public bool checkInputDivisibleBy5(int userInput)
+        {
+            return userInput % 5 == 0;
+        }
         public string[] PingPongOutput(int number)
         {
             string[] output = new string[] {"1"};
