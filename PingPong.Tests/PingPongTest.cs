@@ -82,13 +82,35 @@ namespace PingPong.Tests
             Assert.AreEqual("19", testPingPong.outputForSingleNumber(19));
         } 
         
-        // [TestMethod]
-        // public void PingPongOutput_1AsUserInput_Returns1()
-        // {
-        //     PingPong testPingPong = new PingPong();
-        //     string[] testOutput = testPingPong.PingPongOutput(1);
-        //     string[] temp = new string[] {"1"};
-        //     CollectionAssert.AreEqual(temp, testOutput);
-        // }
+        [TestMethod]
+        public void PingPongOutput_1AsUserInput_1()
+        {
+            PingPong testPingPong = new PingPong();
+            string[] temp = new string[] {"1"};
+            CollectionAssert.AreEqual(temp, testPingPong.PingPongOutput(1));
+        }
+
+        [TestMethod]
+        public void PingPongOutput_2AsUserInput_ArrayWith1And2()
+        {
+            PingPong testPingPong = new PingPong();
+            string[] temp = new string[] {"1", "2"};
+            CollectionAssert.AreEqual(temp, testPingPong.PingPongOutput(2));
+        }    
+        [TestMethod]
+        public void PingPongOutput_3AsUserInput_ArrayWith1And2AndPing()
+        {
+            PingPong testPingPong = new PingPong();
+            string[] temp = new string[] {"1", "2", "ping"};
+            CollectionAssert.AreEqual(temp, testPingPong.PingPongOutput(3));
+        }
+
+        [TestMethod]
+        public void PingPongOutput_5AsUserInput_ArrayWith1And2AndPingAnd4AndPong()
+        {
+            PingPong testPingPong = new PingPong();
+            string[] temp = new string[] {"1", "2", "ping", "4", "pong"};
+            CollectionAssert.AreEqual(temp, testPingPong.PingPongOutput(5));
+        }   
     }
 }
