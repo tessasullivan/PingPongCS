@@ -14,6 +14,7 @@ A user enters a number, and is then provided a list of all the numbers beginning
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
+| Non-integer input should give error | User enters 'test' | Program returns error, asking them to enter a number > 0|
 | User enters simplest count|User enters 1|Program returns '1' |
 | User enters number where no substitution will take place|user enters 2|Program returns '1 2' |
 | User enters 1st number divisible by 3|User enters 3 | Program returns '1 2 "ping"' |
